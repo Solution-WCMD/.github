@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">SolutionWCMD organization profile banner</title>
+  <desc id="desc">An animated dark science-fiction interface introducing SolutionWCMD as the universe and Solution as the game at its center.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#040509"/>
+      <stop offset="0.48" stop-color="#0a0b12"/>
+      <stop offset="1" stop-color="#100913"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3fc6ff"/>
+      <stop offset="0.38" stop-color="#7357d8"/>
+      <stop offset="0.68" stop-color="#d93245"/>
+      <stop offset="1" stop-color="#f1c65a"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff4b5"/>
+      <stop offset="0.5" stop-color="#f4c84d"/>
+      <stop offset="1" stop-color="#b8751b"/>
+    </linearGradient>
+    <radialGradient id="violetGlow">
+      <stop offset="0" stop-color="#7c50ff" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#7c50ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="redGlow">
+      <stop offset="0" stop-color="#df203d" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#df203d" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#d6d9e3" stroke-opacity=".055"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="wideGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="13"/>
+    </filter>
+    <clipPath id="clip"><rect width="1200" height="440" rx="26"/></clipPath>
+    <style>
+      .sans{font-family:Inter,"Segoe UI",Arial,sans-serif}
+      .mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+      .flow{stroke-dasharray:8 13;animation:flow 13s linear infinite}
+      .scan{animation:scan 7.5s linear infinite}
+      .pulse{animation:pulse 2.9s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      .pulse2{animation:pulse 2.9s ease-in-out .9s infinite;transform-box:fill-box;transform-origin:center}
+      .orbit{animation:orbit 18s linear infinite;transform-box:fill-box;transform-origin:center}
+      .orbitReverse{animation:orbitReverse 12s linear infinite;transform-box:fill-box;transform-origin:center}
+      .glitchA{animation:glitchA 5.2s steps(1,end) infinite}
+      .glitchB{animation:glitchB 4.6s steps(1,end) infinite}
+      .blink{animation:blink 1.3s steps(1,end) infinite}
+      @keyframes flow{to{stroke-dashoffset:-168}}
+      @keyframes scan{0%{transform:translateY(-30px)}100%{transform:translateY(500px)}}
+      @keyframes pulse{0%,100%{opacity:.48;transform:scale(.88)}50%{opacity:1;transform:scale(1.09)}}
+      @keyframes orbit{to{transform:rotate(360deg)}}
+      @keyframes orbitReverse{to{transform:rotate(-360deg)}}
+      @keyframes glitchA{0%,86%,100%{transform:translate(0);opacity:.18}87%{transform:translate(9px,-2px);opacity:.62}88%{transform:translate(-7px,2px);opacity:.35}90%{transform:translate(3px);opacity:.18}}
+      @keyframes glitchB{0%,72%,100%{transform:translate(0);opacity:.12}73%{transform:translate(-11px,1px);opacity:.58}75%{transform:translate(8px,-1px);opacity:.28}77%{transform:translate(0);opacity:.12}}
+      @keyframes blink{0%,52%{opacity:1}53%,100%{opacity:.22}}
+      @media (prefers-reduced-motion:reduce){.flow,.scan,.pulse,.pulse2,.orbit,.orbitReverse,.glitchA,.glitchB,.blink{animation:none}}
+    </style>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="440" fill="url(#bg)"/>
+    <rect width="1200" height="440" fill="url(#grid)"/>
+    <ellipse cx="330" cy="470" rx="460" ry="260" fill="url(#violetGlow)"/>
+    <ellipse cx="1100" cy="135" rx="320" ry="270" fill="url(#redGlow)"/>
+    <rect class="scan" x="0" y="-28" width="1200" height="28" fill="url(#accent)" opacity=".045"/>
+
+    <path d="M0 75h348l25 25h218" fill="none" stroke="#3fc6ff" stroke-opacity=".22"/>
+    <path d="M1200 365H918l-28-28H710" fill="none" stroke="#f1c65a" stroke-opacity=".20"/>
+    <path class="flow" d="M22 408H450" fill="none" stroke="#7357d8" stroke-width="2" stroke-opacity=".30"/>
+    <path class="flow" d="M803 34h374" fill="none" stroke="#d93245" stroke-width="2" stroke-opacity=".26"/>
+
+    <g transform="translate(62 45)">
+      <g class="mono" font-size="13" letter-spacing="1.5">
+        <rect width="282" height="31" rx="15.5" fill="#0d1119" stroke="#596477" stroke-opacity=".65"/>
+        <circle cx="18" cy="15.5" r="4" fill="#d93245" class="blink"/>
+        <text x="33" y="20.5" fill="#b9c1ce">TRANSMISSION://SOLUTIONWCMD</text>
+      </g>
+
+      <text x="0" y="128" class="sans" font-size="79" font-weight="800" letter-spacing="1.5" fill="#f3f2ee">SOLUTIONWCMD</text>
+      <text x="4" y="128" class="sans glitchA" font-size="79" font-weight="800" letter-spacing="1.5" fill="#3fc6ff" opacity=".18">SOLUTIONWCMD</text>
+      <text x="-3" y="128" class="sans glitchB" font-size="79" font-weight="800" letter-spacing="1.5" fill="#d93245" opacity=".12">SOLUTIONWCMD</text>
+      <rect x="0" y="147" width="660" height="4" rx="2" fill="url(#accent)"/>
+
+      <text x="0" y="193" class="sans" font-size="22" font-weight="700" letter-spacing="2.7" fill="#dedde2">AN ORIGINAL STORY-DRIVEN UNIVERSE</text>
+      <text x="0" y="231" class="mono" font-size="17" fill="#9da8b9">Solution is the game at its center.</text>
+      <text x="0" y="263" class="mono" font-size="15" fill="#7e899a">narrative / gameplay / visual development / connected systems</text>
+
+      <g transform="translate(0 306)" class="mono" font-size="12" font-weight="700" letter-spacing="1.1">
+        <g>
+          <rect width="132" height="39" rx="9" fill="#101820" stroke="#3fc6ff" stroke-opacity=".55"/>
+          <circle cx="19" cy="19.5" r="4" fill="#3fc6ff"/>
+          <text x="33" y="24" fill="#c9f4ff">NARRATIVE</text>
+        </g>
+        <g transform="translate(146)">
+          <rect width="103" height="39" rx="9" fill="#1b1710" stroke="#f1c65a" stroke-opacity=".62"/>
+          <circle cx="19" cy="19.5" r="4" fill="#f1c65a"/>
+          <text x="33" y="24" fill="#fff0b8">GAME</text>
+        </g>
+        <g transform="translate(263)">
+          <rect width="129" height="39" rx="9" fill="#181224" stroke="#7357d8" stroke-opacity=".62"/>
+          <circle cx="19" cy="19.5" r="4" fill="#8f73f5"/>
+          <text x="33" y="24" fill="#e4dcff">VISUALS</text>
+        </g>
+        <g transform="translate(406)">
+          <rect width="126" height="39" rx="9" fill="#1b1117" stroke="#d93245" stroke-opacity=".58"/>
+          <circle cx="19" cy="19.5" r="4" fill="#e4485d"/>
+          <text x="33" y="24" fill="#ffd7dd">SYSTEMS</text>
+        </g>
+      </g>
+    </g>
+
+    <g transform="translate(875 220)">
+      <ellipse cx="0" cy="0" rx="223" ry="182" fill="#7357d8" opacity=".06" filter="url(#wideGlow)"/>
+      <g class="orbit">
+        <ellipse cx="0" cy="0" rx="188" ry="143" fill="none" stroke="#59647b" stroke-opacity=".38" stroke-dasharray="4 12"/>
+        <circle cx="188" cy="0" r="6" fill="#3fc6ff" filter="url(#glow)"/>
+      </g>
+      <g class="orbitReverse">
+        <ellipse cx="0" cy="0" rx="151" ry="111" fill="none" stroke="#d93245" stroke-opacity=".42" stroke-dasharray="2 11"/>
+        <circle cx="-151" cy="0" r="5" fill="#d93245" filter="url(#glow)"/>
+      </g>
+
+      <path d="M0-107 107 0 0 107-107 0Z" fill="#090b11" stroke="url(#accent)" stroke-width="3"/>
+      <path d="M0-74 74 0 0 74-74 0Z" fill="#0e1017" stroke="#6f7890" stroke-opacity=".65"/>
+      <path d="M0-37 37 0 0 37-37 0Z" fill="url(#core)" filter="url(#glow)" class="pulse"/>
+      <path d="M0-19 19 0 0 19-19 0Z" fill="#fff7cb"/>
+      <text x="0" y="135" text-anchor="middle" class="mono" font-size="12" letter-spacing="2" fill="#b7becb">SIGNAL LOCKED</text>
+
+      <g transform="translate(-152 -158)" class="mono" font-size="10" letter-spacing="1">
+        <rect width="91" height="28" rx="8" fill="#0b1119" stroke="#3fc6ff" stroke-opacity=".55"/>
+        <text x="45.5" y="18" text-anchor="middle" fill="#bfefff">CANON</text>
+      </g>
+      <g transform="translate(84 -158)" class="mono" font-size="10" letter-spacing="1">
+        <rect width="91" height="28" rx="8" fill="#19150d" stroke="#f1c65a" stroke-opacity=".58"/>
+        <text x="45.5" y="18" text-anchor="middle" fill="#fff0b4">PLAY</text>
+      </g>
+    </g>
+
+    <g opacity=".50">
+      <rect x="742" y="105" width="86" height="4" fill="#3fc6ff" class="glitchA"/>
+      <rect x="970" y="318" width="126" height="4" fill="#d93245" class="glitchB"/>
+      <rect x="730" y="340" width="48" height="3" fill="#f1c65a" class="glitchA"/>
+    </g>
+  </g>
+  <rect x=".75" y=".75" width="1198.5" height="438.5" rx="25.25" fill="none" stroke="#8790a0" stroke-opacity=".35" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="138" viewBox="0 0 1200 138" role="img" aria-labelledby="title desc">
+  <title id="title">SolutionWCMD corruption signal divider</title>
+  <desc id="desc">An animated science-fiction signal readout with unstable blue, violet, red, and gold energy.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#06070b"/>
+      <stop offset=".5" stop-color="#0d0c13"/>
+      <stop offset="1" stop-color="#08070b"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3fc6ff"/>
+      <stop offset=".43" stop-color="#7657dc"/>
+      <stop offset=".72" stop-color="#d93245"/>
+      <stop offset="1" stop-color="#f1c65a"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="clip"><rect width="1200" height="138" rx="18"/></clipPath>
+    <style>
+      .mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+      .move{stroke-dasharray:9 14;animation:move 8s linear infinite}
+      .move2{stroke-dasharray:4 15;animation:move2 11s linear infinite}
+      .flicker{animation:flicker 2.2s steps(1,end) infinite}
+      .pulse{animation:pulse 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      @keyframes move{to{stroke-dashoffset:-138}}
+      @keyframes move2{to{stroke-dashoffset:152}}
+      @keyframes flicker{0%,37%,42%,79%,100%{opacity:.22}38%,41%,80%,82%{opacity:.9}}
+      @keyframes pulse{0%,100%{opacity:.48;transform:scale(.85)}50%{opacity:1;transform:scale(1.16)}}
+      @media (prefers-reduced-motion:reduce){.move,.move2,.flicker,.pulse{animation:none}}
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="138" fill="url(#bg)"/>
+    <rect x="0" y="0" width="5" height="138" fill="url(#signal)"/>
+    <text x="32" y="42" class="mono" font-size="12" letter-spacing="1.6" fill="#8d98aa">SIGNAL://CORRUPTION</text>
+    <text x="32" y="77" class="mono" font-size="20" font-weight="700" letter-spacing="1.8" fill="#e9e9ed">TRANSMISSION UNSTABLE</text>
+    <text x="32" y="103" class="mono" font-size="11" letter-spacing="1.2" fill="#747f90">pattern recognized / origin unresolved</text>
+
+    <path d="M344 70h35l13-16 14 34 18-49 21 64 20-39 16 8h28l17-11 21 22 19-38 18 54 20-31 16 2h31l13-27 17 53 19-38 17 17h32l19-12 22 26 19-47 19 70 20-41 14 11h33l13-16 16 32 20-49 20 68 19-39 15 4h53" fill="none" stroke="url(#signal)" stroke-width="2.4" filter="url(#glow)"/>
+    <path class="move" d="M335 70H1110" fill="none" stroke="url(#signal)" stroke-width="1.6" stroke-opacity=".55"/>
+    <path class="move2" d="M352 91H1087" fill="none" stroke="#7357d8" stroke-width="1" stroke-opacity=".26"/>
+
+    <g class="flicker">
+      <rect x="690" y="39" width="62" height="3" fill="#d93245"/>
+      <rect x="799" y="101" width="106" height="3" fill="#d93245"/>
+      <rect x="942" y="50" width="44" height="3" fill="#3fc6ff"/>
+    </g>
+
+    <circle cx="1111" cy="70" r="6" fill="#f1c65a" filter="url(#glow)" class="pulse"/>
+    <text x="1157" y="76" text-anchor="end" class="mono" font-size="11.5" letter-spacing="1.4" fill="#b7a66e">LIVE</text>
+  </g>
+  <rect x=".75" y=".75" width="1198.5" height="136.5" rx="17.25" fill="none" stroke="#737d8d" stroke-opacity=".30" stroke-width="1.5"/>
+</svg>

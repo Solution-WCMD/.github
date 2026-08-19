@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-labelledby="title desc">
+  <title id="title">SolutionWCMD footer</title>
+  <desc id="desc">Animated footer reading Where Charm Meets Dread and The Transmission Continues.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07080d"/>
+      <stop offset=".55" stop-color="#0c0d14"/>
+      <stop offset="1" stop-color="#100b12"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3fc6ff" stop-opacity="0"/>
+      <stop offset=".25" stop-color="#3fc6ff"/>
+      <stop offset=".52" stop-color="#7357d8"/>
+      <stop offset=".76" stop-color="#d93245"/>
+      <stop offset="1" stop-color="#f1c65a" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#d6d9e3" stroke-opacity=".04"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="clip"><rect width="1200" height="170" rx="20"/></clipPath>
+    <style>
+      .sans{font-family:Inter,"Segoe UI",Arial,sans-serif}
+      .mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+      .flow{stroke-dasharray:6 13;animation:flow 10s linear infinite}
+      .pulse{animation:pulse 2.7s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      .pulse2{animation:pulse 2.7s ease-in-out .9s infinite;transform-box:fill-box;transform-origin:center}
+      @keyframes flow{to{stroke-dashoffset:-133}}
+      @keyframes pulse{0%,100%{opacity:.38;transform:scale(.82)}50%{opacity:1;transform:scale(1.14)}}
+      @media (prefers-reduced-motion:reduce){.flow,.pulse,.pulse2{animation:none}}
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="170" fill="url(#bg)"/>
+    <rect width="1200" height="170" fill="url(#grid)"/>
+    <path class="flow" d="M55 35H425l22 22h306l22-22h370" fill="none" stroke="url(#line)" stroke-width="2"/>
+    <circle cx="447" cy="57" r="5" fill="#7357d8" filter="url(#glow)" class="pulse"/>
+    <circle cx="753" cy="57" r="5" fill="#d93245" filter="url(#glow)" class="pulse2"/>
+    <text x="600" y="109" text-anchor="middle" class="sans" font-size="26" font-weight="780" letter-spacing="3.5" fill="#e8e7eb">WHERE CHARM MEETS DREAD</text>
+    <text x="600" y="139" text-anchor="middle" class="mono" font-size="12" letter-spacing="2.3" fill="#858f9f">SOLUTIONWCMD // THE TRANSMISSION CONTINUES</text>
+  </g>
+  <rect x=".75" y=".75" width="1198.5" height="168.5" rx="19.25" fill="none" stroke="#8992a2" stroke-opacity=".30" stroke-width="1.5"/>
+</svg>
